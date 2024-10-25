@@ -64,7 +64,7 @@ Stefanini_Latam_Challenge/
 1. Clona este repositorio:
     ```bash
     git clone https://github.com/drodriguezol/stefanini-latam-challenge.git
-    cd Stefanini_Latam_Challenge
+    cd stefanini-latam-challenge
     ```
 
 ### Configuración del Backend
