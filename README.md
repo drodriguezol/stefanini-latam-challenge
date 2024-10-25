@@ -6,7 +6,7 @@ Este proyecto es una aplicación de gestión de tareas desarrollada para el Stef
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Prerrequisitos](#prerrequisitos)
 - [Setup](#setup)
-- [Ejecutar la Aplicación](#ejecutar-la-aplicacion)
+- [Ejecutar la Aplicación](#ejecutar-la-aplicación)
 - [Pruebas](#pruebas)
 - [Endpoints de la API](#endpoints-de-la-api)
 
