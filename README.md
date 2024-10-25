@@ -5,7 +5,7 @@ Este proyecto es una aplicación de gestión de tareas desarrollada para el Stef
 ## Tabla de Contenidos
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Prerrequisitos](#prerrequisitos)
-- [Configuración](#setup)
+- [Setup](#setup)
 - [Ejecutar la Aplicación](#ejecutar-la-aplicacion)
 - [Pruebas](#pruebas)
 - [Endpoints de la API](#endpoints-de-la-api)
@@ -58,7 +58,7 @@ Stefanini_Latam_Challenge/
 
 ---
 
-## set up
+## Setup
 
 ### Clonar el Repositorio
 1. Clona este repositorio:
