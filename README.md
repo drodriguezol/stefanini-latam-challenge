@@ -7,7 +7,7 @@ Este proyecto es una aplicación de gestión de tareas desarrollada para el Stef
 - [Prerrequisitos](#prerrequisitos)
 - [Setup](#setup)
 - [Ejecutar la Aplicación](#ejecutar-la-aplicación)
-- [Pruebas](#pruebas)
+- [Testing](#testing)
 - [Endpoints de la API](#endpoints-de-la-api)
 
 ---
@@ -117,7 +117,7 @@ Stefanini_Latam_Challenge/
 
 ---
 
-## Pruebas
+## Testing
 
 ### Pruebas del Backend
 1. En el directorio `backend`, activa el entorno virtual.
