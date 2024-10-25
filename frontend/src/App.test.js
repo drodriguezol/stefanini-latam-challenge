@@ -3,6 +3,18 @@ import TaskManager from './TaskManager';
 import axios from 'axios';
 import App from './App';
 
+// Ignorar todas las advertencias de consola
+const originalWarn = console.warn;
+const originalError = console.error;
+beforeAll(() => {
+  console.warn = () => {};
+  console.error = () => {};
+});
+afterAll(() => {
+  console.warn = originalWarn;
+  console.error = originalError;
+});
+
 // Mock de Axios antes de cada prueba
 beforeEach(() => {
   jest.spyOn(axios, 'get').mockResolvedValue({
@@ -107,4 +119,3 @@ test('renderiza el componente TaskManager', () => {
   const taskManagerElement = screen.getByText(/gestión de tareas/i); // Ajusta el texto según tu implementación en TaskManager
   expect(taskManagerElement).toBeInTheDocument();
 });
-
