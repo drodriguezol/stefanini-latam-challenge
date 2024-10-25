@@ -63,7 +63,7 @@ Stefanini_Latam_Challenge/
 ### Clonar el Repositorio
 1. Clona este repositorio:
     ```bash
-    git clone <repository_url>
+    git clone <https://github.com/drodriguezol/stefanini-latam-challenge.git>
     cd Stefanini_Latam_Challenge
     ```
 
