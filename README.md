@@ -1,20 +1,20 @@
 # Stefanini Latam Challenge
 
-This project is a task management application developed for the Stefanini Latam Challenge. It consists of a simple frontend using React and a backend API built with Flask and SQLite. The application allows users to create, view, and delete tasks.
+Este proyecto es una aplicación de gestión de tareas desarrollada para el Stefanini Latam Challenge. Consiste en un frontend simple usando React y una API backend construida con Flask y SQLite. La aplicación permite a los usuarios crear, ver y eliminar tareas.
 
-## Table of Contents
-- [Project Structure](#project-structure)
-- [Prerequisites](#prerequisites)
-- [Setup](#setup)
-- [Running the Application](#running-the-application)
-- [Testing](#testing)
-- [API Endpoints](#api-endpoints)
+## Tabla de Contenidos
+- [Estructura del Proyecto](#project-structure)
+- [Prerrequisitos](#prerequisites)
+- [Configuración](#setup)
+- [Ejecutar la Aplicación](#running-the-application)
+- [Pruebas](#testing)
+- [Endpoints de la API](#api-endpoints)
 
 ---
 
-## Project Structure
+## Estructura del Proyecto
 
-The project is structured as follows:
+El proyecto está estructurado de la siguiente manera:
 
 ```
 Stefanini_Latam_Challenge/
@@ -24,7 +24,7 @@ Stefanini_Latam_Challenge/
 │   ├── test_app.py           # Unit tests for backend
 │   ├── requirements.txt      # Backend dependencies
 │   └── instance/             # Instance folder for Flask
-│       └── venv/             # Virtual environment folder for Python
+│       └── task.db/          # Archivo de base de datos
 ├── .coverage                 # Coverage report for backend tests
 ├── frontend/
 │   ├── coverage/             # Coverage report for frontend tests
@@ -47,108 +47,104 @@ Stefanini_Latam_Challenge/
 └── .gitignore                # Git ignore file for both backend and frontend
 ```
 
-# General project instructions
+---
 
+## Prerrequisitos
+
+- **Node.js** y **npm**: Descargar desde [Node.js](https://nodejs.org/)
+- **Python 3.9+**: Disponible en [Python.org](https://www.python.org/downloads/)
+- **pip**: Instalador de paquetes de Python
+- **SQLite**: Base de datos integrada con Python 3.9+
 
 ---
 
-## Prerequisites
+## Configuración
 
-- **Node.js** and **npm**: Download from [Node.js](https://nodejs.org/)
-- **Python 3.9+**: Available at [Python.org](https://www.python.org/downloads/)
-- **pip**: Python package installer
-- **SQLite**: Integrated database with Python 3.9+
-
----
-
-## Setup
-
-### Clone Repository
-1. Clone this repository:
+### Clonar el Repositorio
+1. Clona este repositorio:
     ```bash
     git clone <repository_url>
     cd Stefanini_Latam_Challenge
     ```
 
-### Backend Setup
-1. Navigate to the `backend` directory:
+### Configuración del Backend
+1. Navega al directorio `backend`:
     ```bash
     cd backend
     ```
-2. Create a virtual environment and activate it:
+2. Crea un entorno virtual y actívalo:
     ```bash
     python3 -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
+    source venv/bin/activate  # En Windows: venv\Scripts\activate
     ```
-3. Install dependencies:
+3. Instala las dependencias:
     ```bash
     pip install -r requirements.txt
     ```
-4. Initialize the SQLite database:
+4. Inicializa la base de datos SQLite:
     ```bash
     python3 -c "from app import db; db.create_all()"
     ```
 
-### Frontend Setup
-1. Navigate to the `frontend` directory:
+### Configuración del Frontend
+1. Navega al directorio `frontend`:
     ```bash
     cd ../frontend
     ```
-2. Install dependencies:
+2. Instala las dependencias:
     ```bash
     npm install
     ```
 
 ---
 
-## Running the Application
+## Ejecutar la Aplicación
 
-### Running the Backend Server
-1. In the `backend` directory, ensure the virtual environment is activated.
-2. Run the Flask app:
+### Ejecutar el Servidor Backend
+1. En el directorio `backend`, asegúrate de que el entorno virtual esté activado.
+2. Ejecuta la aplicación Flask:
     ```bash
     python3 app.py
     ```
-3. The backend server will start on `http://127.0.0.1:5000`.
+3. El servidor backend se iniciará en `http://127.0.0.1:5000`.
 
-### Running the Frontend Server
-1. In the `frontend` directory:
+### Ejecutar el Servidor Frontend
+1. En el directorio `frontend`:
     ```bash
     npm start
     ```
-2. The frontend will start on `http://localhost:3000`.
+2. El frontend se iniciará en `http://localhost:3000`.
 
 ---
 
-## Testing
+## Pruebas
 
-### Backend Tests
-1. In the `backend` directory, activate the virtual environment.
-2. Run tests with:
+### Pruebas del Backend
+1. En el directorio `backend`, activa el entorno virtual.
+2. Ejecuta las pruebas con:
     ```bash
     python -m unittest discover
     ```
-3. To view coverage, install `coverage` and run:
+3. Para ver la cobertura, instala `coverage` y ejecuta:
     ```bash
     pip install coverage
     coverage run -m unittest discover
     coverage report
     ```
 
-### Frontend Tests
-1. In the `frontend` directory, run:
+### Pruebas del Frontend
+1. En el directorio `frontend`, ejecuta:
     ```bash
     npm test -- --coverage
-
     ```
 
 ---
 
-## API Endpoints
+## Endpoints de la API
 
 ### `GET /tasks`
-- **Description**: Retrieve all tasks.
-- **Response**:
+- **Descripción**: Recupera todas las tareas.
+- **Respuesta**:
     ```json
     [
         {
@@ -160,15 +156,15 @@ Stefanini_Latam_Challenge/
     ```
 
 ### `POST /tasks`
-- **Description**: Create a new task.
-- **Request**:
+- **Descripción**: Crea una nueva tarea.
+- **Solicitud**:
     ```json
     {
         "title": "New Task",
         "description": "Task Description"
     }
     ```
-- **Response**:
+- **Respuesta**:
     ```json
     {
         "id": 1,
@@ -178,7 +174,5 @@ Stefanini_Latam_Challenge/
     ```
 
 ### `DELETE /tasks/<id>`
-- **Description**: Delete a task by ID.
-- **Response**: Status `204 No Content` if successful.
-
-
+- **Descripción**: Elimina una tarea por ID.
+- **Respuesta**: Estado `204 No Content` si se completa con éxito.
