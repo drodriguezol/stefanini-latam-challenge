@@ -81,11 +81,6 @@ Stefanini_Latam_Challenge/
     ```bash
     pip install -r requirements.txt
     ```
-4. Inicializa la base de datos SQLite:
-    ```bash
-    python3 -c "from app import db; db.create_all()"
-    ```
-
 ### Configuración del Frontend
 1. Navega al directorio `frontend`:
     ```bash
