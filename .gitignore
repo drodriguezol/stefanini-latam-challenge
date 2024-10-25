@@ -1,0 +1,43 @@
+# Ignorar node_modules (dependencias de npm)
+node_modules/
+
+# Ignorar build o dist (si construyes tu proyecto React)
+build/
+dist/
+
+# Archivos de logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignorar archivos de dependencias de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+env/
+venv/
+
+# Ignorar la base de datos SQLite
+tasks.db
+
+# Ignorar entornos virtuales de Python
+.env
+.venv
+ENV/
+env.bak/
+venv.bak/
+
+# Ignorar archivos del sistema operativo o del editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Si usas coverage para pruebas
+coverage/
+*.cover
+*.coverage
+.coverage
+# Archivos de configuración específicos del sistema
+*.local
