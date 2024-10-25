@@ -17,7 +17,34 @@ This project is a task management application developed for the Stefanini Latam 
 The project is structured as follows:
 
 ```
-Stefanini_Latam_Challenge/ ├── backend/ │ ├── app.py # Flask app with API endpoints │ ├── models.py # Database model definitions │ ├── test_app.py # Unit tests for backend │ ├── requirements.txt # Backend dependencies │ └── instance/ # Instance folder for Flask │ └── venv/ # Virtual environment folder for Python ├── .coverage # Coverage report for backend tests ├── frontend/ │ ├── coverage/ # Coverage report for frontend tests │ ├── node_modules/ # Node modules for React │ ├── public/ # Public folder for React │ └── src/ │ ├── images/ # Folder for images used in frontend │ ├── App.css # Main CSS file for React app │ ├── App.js # Main React component │ ├── App.test.js # Unit tests for frontend │ ├── index.css # CSS file for index │ ├── index.js # Entry point for React app │ ├── logo.svg # Logo for the app │ ├── reportWebVitals.js # Web vitals reporting for performance │ ├── setupTests.js # Setup for testing environment │ ├── TaskManager.css # CSS for Task Manager component │ └── TaskManager.js # Task management component ├── package.json # Frontend dependencies ├── package-lock.json # Lock file for dependencies └── .gitignore # Git ignore file for both backend and frontend
+Stefanini_Latam_Challenge/
+├── backend/
+│   ├── app.py                # Flask app with API endpoints
+│   ├── models.py             # Database model definitions
+│   ├── test_app.py           # Unit tests for backend
+│   ├── requirements.txt      # Backend dependencies
+│   └── instance/             # Instance folder for Flask
+│       └── venv/             # Virtual environment folder for Python
+├── .coverage                 # Coverage report for backend tests
+├── frontend/
+│   ├── coverage/             # Coverage report for frontend tests
+│   ├── node_modules/         # Node modules for React
+│   ├── public/               # Public folder for React
+│   └── src/
+│       ├── images/           # Folder for images used in frontend
+│       ├── App.css           # Main CSS file for React app
+│       ├── App.js            # Main React component
+│       ├── App.test.js       # Unit tests for frontend
+│       ├── index.css         # CSS file for index
+│       ├── index.js          # Entry point for React app
+│       ├── logo.svg          # Logo for the app
+│       ├── reportWebVitals.js # Web vitals reporting for performance
+│       ├── setupTests.js     # Setup for testing environment
+│       ├── TaskManager.css   # CSS for Task Manager component
+│       └── TaskManager.js    # Task management component
+├── package.json              # Frontend dependencies
+├── package-lock.json         # Lock file for dependencies
+└── .gitignore                # Git ignore file for both backend and frontend
 ```
 
 # General project instructions
