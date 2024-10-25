@@ -89,6 +89,8 @@ Stefanini_Latam_Challenge/
 2. Instala las dependencias:
     ```bash
     npm install
+    npm install react react-dom axios react-scripts
+
     ```
 
 ---
@@ -118,7 +120,7 @@ Stefanini_Latam_Challenge/
 1. En el directorio `backend`, activa el entorno virtual.
 2. Ejecuta las pruebas con:
     ```bash
-    python -m unittest discover
+    python3 -m unittest discover
     ```
 3. Para ver la cobertura, instala `coverage` y ejecuta:
     ```bash
@@ -130,7 +132,8 @@ Stefanini_Latam_Challenge/
 ### Pruebas del Frontend
 1. En el directorio `frontend`, ejecuta:
     ```bash
-    npm test -- --coverage
+    npm test -- --watchAll --coverage
+
     ```
 
 ---
