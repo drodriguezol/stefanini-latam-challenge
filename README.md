@@ -2,6 +2,11 @@
 
 Este proyecto es una aplicación de gestión de tareas desarrollada para el Stefanini Latam Challenge. Consiste en un frontend simple usando React y una API backend construida con Flask y SQLite. La aplicación permite a los usuarios crear, ver y eliminar tareas.
 
+## Demo del Proyecto
+
+[![Demo del Proyecto](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+
+
 ## Tabla de Contenidos
 - [Estructura del Proyecto](#estructura-del-proyecto)
 - [Prerrequisitos](#prerrequisitos)
