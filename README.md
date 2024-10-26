@@ -4,7 +4,7 @@ Este proyecto es una aplicación de gestión de tareas desarrollada para el Stef
 
 ## Demo del Proyecto
 
-[![Demo del Proyecto](https://img.youtube.com/vi/VIDEO_ID/0.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)
+[![Demo del Proyecto](https://cdn-icons-png.flaticon.com/512/174/174883.png)](https://www.youtube.com/watch?v=VIDEO_ID)
 
 
 ## Tabla de Contenidos
